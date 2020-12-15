@@ -15,12 +15,12 @@ npm install --save react-osm-geocoding
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-osm-geocoding'
+import ReactOsmGeocoding from 'react-osm-geocoding'
 import 'react-osm-geocoding/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <ReactOsmGeocoding  callback={data => console.log(data)}/>
   }
 }
 ```

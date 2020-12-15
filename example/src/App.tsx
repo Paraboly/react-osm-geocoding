@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-osm-geocoding'
+import { ReactOsmGeocoding, Result } from 'react-osm-geocoding'
 import 'react-osm-geocoding/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactOsmGeocoding callback={(result:Result)=> console.log(result)}/>
 }
 
 export default App

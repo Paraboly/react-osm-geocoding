@@ -1,9 +1,59 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.reactOsmGeocoding {
+    width: 240px;
+    position: relative;
+}
+
+.reactOsmGeocoding>input {
+    width: inherit;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: transparent;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding-left: 45px;
+    padding-right: 30px;
+}
+.reactOsmGeocoding>img {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+
+.reactOsmGeocoding .results {
+    border: 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-color: aliceblue;
+    margin-right: -75px;
+}
+
+.reactOsmGeocoding .results .result {
+    padding: 5px;
+    cursor: pointer;
+}
+.reactOsmGeocoding .results .result:hover {
+    background-color: beige;
+}
+
+.reactOsmGeocoding .loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+
+    position: absolute;
+    top: 5px;
+    right: -70px;
+    width: 10px;
+    height: 10px;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
