@@ -6,15 +6,17 @@ interface Props {
   debounce?: number,
   iconUrl?: string,
   callback?: Function,
+  city?: string,
   countrycodes?: string,
-  acceptLanguage?: string
+  acceptLanguage?: string,
+  viewbox?: string
 }
 
 export interface Result {
   boundingbox: Array<string>,
   display_name: string,
   lat: string,
-  lng: string
+  lon: string
 }
 
 export class debouncedMethod<T>{
@@ -48,7 +50,7 @@ const renderResults = (results: any, callback: Function | undefined, setShowResu
   </div>
 
 
-export const ReactOsmGeocoding = ({ placeholder = "Enter address", debounce = 2000, iconUrl = "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png", callback, countrycodes = "tr", acceptLanguage = "tr" }: Props) => {
+export const ReactOsmGeocoding = ({ placeholder = "Enter address", debounce = 1000, iconUrl = "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png", callback, city = "Konya", countrycodes = "tr", acceptLanguage = "tr", viewbox = "" }: Props) => {
   const [results, setResults] = useState<Partial<Result[]>>([]);
   const [showResults, setShowResults] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
@@ -61,12 +63,21 @@ export const ReactOsmGeocoding = ({ placeholder = "Enter address", debounce = 20
       }
   });
 
+  document.onkeyup = function(event) {
+    if (event.key === "Escape"){
+      setShowResults(false);
+      }
+  }
+
   function getGeocoding(address = "") {
     if(address.length === 0) return;
 
     setShowLoader(true);
 
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${address}&countrycodes=${countrycodes}&accept-language=${acceptLanguage}`;
+    let url = `https://nominatim.openstreetmap.org/search?format=json&q=${address}&city=${city}&countrycodes=${countrycodes}&accept-language=${acceptLanguage}`;
+
+    if(viewbox.length)
+      url = `${url}&viewbox=${viewbox}&bounded=1`;
 
     fetch(url)
     .then(response => response.json())

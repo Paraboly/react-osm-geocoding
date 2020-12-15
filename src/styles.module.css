@@ -1,8 +1,9 @@
 /* add css module styles here (optional) */
 
 .reactOsmGeocoding {
-    width: 240px;
+    width: 300px;
     position: relative;
+    background: #eee;
 }
 
 .reactOsmGeocoding>input {
@@ -14,6 +15,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding-left: 45px;
     padding-right: 30px;
+    box-sizing: border-box;
 }
 .reactOsmGeocoding>img {
     position: absolute;
@@ -29,7 +31,8 @@
     padding: 5px 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-color: aliceblue;
-    margin-right: -75px;
+    max-height: 500px;
+    overflow: scroll;
 }
 
 .reactOsmGeocoding .results .result {
@@ -48,7 +51,7 @@
 
     position: absolute;
     top: 5px;
-    right: -70px;
+    right: 5px;
     width: 10px;
     height: 10px;
 }
