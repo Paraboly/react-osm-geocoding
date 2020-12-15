@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-osm-geocoding.svg)](https://www.npmjs.com/package/react-osm-geocoding) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![alt text](./images/search.png)
+![alt text](./images/result.png)
 ## Install
 
 ```bash

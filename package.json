@@ -1,10 +1,10 @@
 {
-  "name": "react-osm-geocoding",
+  "name": "@paraboly/react-osm-geocoding",
   "version": "1.0.0",
   "description": "Find address locations via OSM Nominatim",
   "author": "SchemeSonic",
   "license": "MIT",
-  "repository": "SchemeSonic/react-osm-geocoding",
+  "repository": "Paraboly/react-osm-geocoding",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
