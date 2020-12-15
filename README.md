@@ -6,6 +6,8 @@
 
 ![alt text](./images/search.png)
 ![alt text](./images/result.png)
+## Integration Example
+![alt text](./images/integration.gif)
 ## Install
 
 ```bash
