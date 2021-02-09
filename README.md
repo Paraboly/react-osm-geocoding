@@ -11,7 +11,7 @@
 ## Install
 
 ```bash
-npm install --save react-osm-geocoding
+npm install --save @paraboly/react-osm-geocoding
 ```
 
 ## Usage
@@ -19,8 +19,8 @@ npm install --save react-osm-geocoding
 ```tsx
 import React, { Component } from 'react'
 
-import ReactOsmGeocoding from 'react-osm-geocoding'
-import 'react-osm-geocoding/dist/index.css'
+import ReactOsmGeocoding from '@paraboly/react-osm-geocoding'
+import '@paraboly/react-osm-geocoding/dist/index.css'
 
 class Example extends Component {
   render() {
