@@ -19,7 +19,7 @@ npm install --save @paraboly/react-osm-geocoding
 ```tsx
 import React, { Component } from 'react'
 
-import ReactOsmGeocoding from '@paraboly/react-osm-geocoding'
+import { ReactOsmGeocoding } from '@paraboly/react-osm-geocoding'
 import '@paraboly/react-osm-geocoding/dist/index.css'
 
 class Example extends Component {
