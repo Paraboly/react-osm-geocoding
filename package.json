@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/react-osm-geocoding",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find address locations via OSM Nominatim",
   "author": "SchemeSonic",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0 || ^17.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
