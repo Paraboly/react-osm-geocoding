@@ -2,7 +2,7 @@
 
 > Find address locations via OSM Nominatim
 
-[![NPM](https://img.shields.io/npm/v/react-osm-geocoding.svg)](https://www.npmjs.com/package/@paraboly/react-osm-geocoding) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@paraboly/react-osm-geocoding.svg)](https://www.npmjs.com/package/@paraboly/react-osm-geocoding) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![alt text](./images/search.png)
 ![alt text](./images/result.png)
